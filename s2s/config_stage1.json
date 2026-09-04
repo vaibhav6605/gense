@@ -1,0 +1,30 @@
+{
+    "_comment": "SimCodec Stage 1 — 2 groups × 500 codes. Top 91 and 90 selected for Stage 2 (91×90=8190 final codes).",
+
+    "stage": 1,
+
+    "sample_rate": 16000,
+    "segment_len": 32000,
+
+    "channel": 1,
+
+    "en_filters": 32,
+    "de_filters": 32,
+
+    "vq_dim": 256,
+
+    "upsample_rates":        [8, 5, 4, 2],
+    "upsample_kernel_sizes": [16, 10, 8, 4],
+
+    "resblock_kernel_sizes":   [3, 7, 11],
+    "resblock_dilation_sizes": [[1, 3, 5], [1, 3, 5], [1, 3, 5]],
+
+    "n_code_groups": 2,
+    "n_codes":       256,
+
+    "codebook_loss_lambda":   1.0,
+    "commitment_loss_lambda": 0.25,
+
+    "top_n": 32,
+    "top_k": 32
+}

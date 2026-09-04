@@ -1,0 +1,32 @@
+{
+  "path": {
+    "n2s_ckpt_path":    "ckpts/n2s_best.pt",
+    "s2s_ckpt_path":    "ckpts/s2s_best.pt",
+    "codec_config_path": "ckpts/codec_config.json"
+  },
+
+  "ssl_model": {
+    "ckpt_path": "facebook/hubert-base-ls960",
+    "km_path":   "ckpts/kmeans_hubert_base_l9_c500.pt",
+    "type":      "hubert_fairseq",
+    "layer":     9
+  },
+
+  "n2s_model": {
+    "hidden_size":        768,
+    "num_hidden_layers":  12,
+    "num_attention_heads": 8,
+    "semantic_num":       500,
+    "vocab_size":         503
+  },
+
+  "s2s_model": {
+    "hidden_size":         1024,
+    "num_hidden_layers":   12,
+    "num_attention_heads": 16,
+    "semantic_num":        500,
+    "acoustic_num":        8192,
+    "vocab_size":          8695,
+    "n_positions":         4096
+  }
+}

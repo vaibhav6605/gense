@@ -1,0 +1,10 @@
+huggingface_hub
+torch
+numpy
+joblib
+scikit-learn
+torchaudio
+soundfile
+dotenv
+openai
+unit-hifigan
